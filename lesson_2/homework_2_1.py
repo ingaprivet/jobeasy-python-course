@@ -11,6 +11,7 @@ result_string_3 = """Apple"""
 
 result_name = 'Inga'
 
+
 # Enter your first and  last name. Join them together with a space in
 # between. Save a result in a variable result_full_name and
 # save the length of the whole name in result_full_name_length variable.

@@ -75,7 +75,7 @@ def test_number_multiplication():
     # that will multiply all the digits together and return the result.
     if number_multiplication(number_1) == None or number_1 == None:
         pytest.skip(f"You didn't finish this task. the result variable equals None")
-    result = 0
+    result = 1
     num_string = str(number_1)
     length = len(num_string)
     index = 0
@@ -96,5 +96,5 @@ def test_number_reverse():
     while index > 0:
         result += num_string[index-1]
         index -= 1
-    assert number_multiplication(number_1) == int(result)
+    assert number_reverse(number_1) == int(result)
 

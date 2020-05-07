@@ -1,37 +1,48 @@
 # WHILE LOOPS EXERCISES
 
-# Set the total variable to 0 to start with. While the total is 50 or less, Ask the user to input a number in number_1
-# variable. Add that number to the total and print the message “The total is… [total]”.
-# Stop the loop when the total is over 50. Final result save in result_1 variable
+# Enter a random string in the variable string_1, then enter a character and
+# save it in the variable char_1.
+# Write function counter, which will count how many
+# times your character is included in your string
 
-total = 0
-
-while total <= 50:
-    number_1 = int(input('Input a number '))
-    total = total + number_1
-    print('The total is ' + str(total))
-result_1 = total
+string_1 = 'Spring'
+char_1 = 'p'
 
 
+def counter(string, char):
+    return string_1.count(char_1)
 
 
-# Ask the user to enter a number and save in number_2 variable. Keep asking until they enter a value over 5 and then
-# display the message “The last number you entered was a [number]” and stop the program. The last result save in
-# result_2 variable
+# Enter a random number and save it in variable number_1.
+# Then create a function number_multiplication
+# that will multiply all the digits together and return the result.
 
-variable_2 = int(input('Input a number '))
-while variable_2 <= 5:
-    variable_2 = int(input('Input a number '))
-else:
-    print('The last number you entered was ' + str(variable_2))
-result_2 = variable_2
+number_1 = 222
 
 
-# Ask for the name of somebody the user wants to invite to a party. Save name in variable name_2
-# After this, display the message “[name] has now been invited” and add 1 to the count variable.
-# Then ask if they want to invite somebody else. Get only "yes" or "no" answers
-# Keep repeating this until they no longer want to invite anyone else to the party and then display how many people
-# they have coming to the party.
+def number_multiplication(number):
+    index = 0
+    result = 1
+    while index < len(str(number)):
+        result *= int(str(number)[index])
+        index += 1
+    return result
 
-name_2 = None
-count = None
+
+# Enter a random number and save it in variable number_2. Then create function number_reverse
+# which will return
+# a number with digits of number_1 in reverse order
+
+number_2 = 467
+
+
+def number_reverse(number):
+    result = ''
+    index = len(str(number_2))
+    while index > 0:
+        result += str(number_2)[index - 1]
+        index -= 1
+    return int(result)
+
+
+print(number_reverse(467))
